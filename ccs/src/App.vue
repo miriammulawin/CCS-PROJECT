@@ -1,18 +1,10 @@
 <template>
-  <div id="app">
-    <FacultyDashboard />
-  </div>
+  <RouterView />
 </template>
 
 <script>
-
-import FacultyDashboard from './facultyPages/FacultyDashboard.vue'
-
 export default {
   name: 'App',
-  components: {
-    FacultyDashboard
-  }
 }
 </script>
 
