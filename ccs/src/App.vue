@@ -5,6 +5,7 @@
 </template>
 
 <script>
+
 import FacultyDashboard from './facultyPages/FacultyDashboard.vue'
 
 export default {

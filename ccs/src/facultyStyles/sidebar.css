@@ -1,0 +1,21 @@
+.sidebar {
+  width: 300px;
+  min-height: 100vh;
+  background-color: #E65100;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  background-color: #E65100;
+  font-family: Gabarito, sans-serif;
+  font-size: 2rem;
+  
+}
+
+.active-nav {
+  background-color: #e04b2a;
+  color: white !important;
+  font-weight: 600;
+  border-radius: 4px;
+}
