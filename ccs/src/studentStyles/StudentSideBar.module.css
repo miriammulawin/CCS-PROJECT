@@ -1,0 +1,234 @@
+/* ============================================
+   Student Sidebar – Module CSS
+   No media queries — Bootstrap + clamp().
+   ============================================ */
+
+/* ── Expanded sidebar shell ── */
+.sidebar {
+  width: clamp(260px, 28vw, 320px);
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-right: 1px solid #e8d5cc;
+  flex-shrink: 0;
+}
+
+/* ── Collapsed icon-only strip ── */
+.sidebarCollapsed {
+  width: clamp(62px, 6.5vw, 76px);
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  background-color: #ffffff;
+  border-right: 1px solid #e8d5cc;
+  flex-shrink: 0;
+}
+
+/* ── Collapsed toggle area ── */
+.collapsedToggle {
+  background-color: #ffffff;
+}
+
+.collapsedDivider {
+  border-color: #f0e0d8;
+}
+
+/* ── Collapsed nav items ── */
+.collapsedNavItem {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  margin: 0 auto;
+  transition: background-color 0.16s ease;
+}
+
+.collapsedNavItem:hover {
+  background-color: #fff3ee;
+}
+
+.collapsedNavIcon {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  color: #E65100;
+}
+
+.collapsedNavActive {
+  background-color: #E65100 !important;
+  border-radius: 50%;
+}
+
+.collapsedNavActive .collapsedNavIcon {
+  color: #ffffff;
+}
+
+/* ── Header ── */
+.sidebarHeader {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f5ede8;
+}
+
+.sidebarTitle {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(1.3rem, 2.4vw, 1.75rem);
+  font-weight: 700;
+  color: #E65100;
+  letter-spacing: 0.02em;
+}
+
+.menuIcon {
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+  color: #E65100;
+  cursor: pointer;
+}
+
+/* ── Profile card ── */
+.profileCard {
+  background-color: #E65100;
+  border-radius: 12px;
+  margin-top: 12px;
+  margin-bottom: 22px;
+}
+
+.avatar {
+  width: clamp(64px, 9vw, 86px);
+  height: clamp(64px, 9vw, 86px);
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.avatarIcon {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: #E65100;
+}
+
+.studentName {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(0.90rem, 1.5vw, 1.1rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.studentId {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(0.72rem, 1.1vw, 0.86rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.90);
+  margin-bottom: 8px;
+}
+
+.profileDivider {
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.studentMeta {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(0.68rem, 1vw, 0.80rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 3px;
+}
+
+/* ── Nav wrapper ── */
+.navWrapper {
+  background-color: #fff3ee;
+  border: 1.5px solid #f5c4aa;
+  border-radius: 12px;
+  padding: 12px 10px;
+  margin: 0 10px;
+}
+
+/* ── Single nav item ── */
+.navItem {
+  border-radius: 10px;
+  border: 1.5px solid #f0d8cc;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.16s ease, border-color 0.16s ease;
+}
+
+.navItem:hover {
+  background-color: #fff3ee;
+  border-color: #E65100;
+}
+
+.navIcon {
+  font-size: clamp(1rem, 1.6vw, 1.25rem);
+  color: #E65100;
+  flex-shrink: 0;
+}
+
+.navLabel {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(0.88rem, 1.35vw, 1.05rem);
+  font-weight: 600;
+  color: #E65100;
+}
+
+.navBadge {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(0.58rem, 0.9vw, 0.70rem);
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #E65100;
+  border-radius: 999px;
+  padding: 2px 8px;
+  line-height: 1.6;
+}
+
+/* ── Active nav item ── */
+.activeNav {
+  background-color: #E65100 !important;
+  border-color: #E65100 !important;
+}
+
+.activeNav .navIcon {
+  color: #ffffff;
+}
+
+.activeNav .navLabel {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ── Logo watermark ── */
+.logoWrap {
+  opacity: 0.20;
+}
+
+.logoCircle {
+  width: clamp(44px, 5.5vw, 62px);
+  height: clamp(44px, 5.5vw, 62px);
+  border-radius: 50%;
+  border: 2px solid #E65100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon {
+  font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+  color: #E65100;
+}
+
+.logoLabel {
+  font-family: 'Gabarito', sans-serif;
+  font-size: clamp(0.55rem, 0.82vw, 0.68rem);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #E65100;
+}

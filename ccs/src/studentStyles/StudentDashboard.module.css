@@ -1,0 +1,52 @@
+/* ============================================
+   Student Dashboard – Module CSS
+   No media queries — Bootstrap + clamp().
+   ============================================ */
+
+/* ── Page wrapper ── */
+.dashboardWrapper {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* ── Main content area ── */
+.mainContent {
+  background-color: #f5f5f5;
+}
+
+/* ── Page title ── */
+.pageTitle {
+  font-family: "Gabarito", sans-serif;
+  font-size: clamp(0.95rem, 1.8vw, 1.2rem);
+  font-weight: 700;
+  color: #444444;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ── Content card ── */
+.contentCard {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* ── Welcome heading ── */
+.welcomeHeading {
+  font-family: "Gabarito", sans-serif;
+  font-size: clamp(1.1rem, 2.4vw, 1.75rem);
+  font-weight: 700;
+  color: #333333;
+}
+
+/* ── CCS accent ── */
+.accentCCS {
+  color: #e65100;
+}
+
+/* ── Welcome sub-text ── */
+.welcomeSub {
+  font-family: "Gabarito", sans-serif;
+  font-size: clamp(0.75rem, 1.2vw, 0.92rem);
+  font-weight: 400;
+  color: #888888;
+}
