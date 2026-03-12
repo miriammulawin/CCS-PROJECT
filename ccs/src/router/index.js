@@ -5,7 +5,7 @@ import StudentDashboard from "@/studentPages/StudentDashboard.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "/login",
     name: "Login",
     component: Login,
   },
