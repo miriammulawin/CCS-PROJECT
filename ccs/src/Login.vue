@@ -55,15 +55,18 @@
           </div>
 
           <!-- Login button -->
-          <AppButton
-            type="submit"
-            variant="primary"
-            size="lg"
-            :block="true"
-            :loading="isLoading"
-          >
-            LOGIN
-          </AppButton>
+          <router-link to="/faculty/dashboard">
+            <AppButton
+              type="submit"
+              variant="primary"
+              size="lg"
+              :block="true"
+              :loading="isLoading"
+            >
+              LOGIN
+            </AppButton>
+          </router-link>
+         
 
         </form>
       </div>
